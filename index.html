@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мини-приложение</title>
-    <!-- Подключение CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Бросок кубика</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение стилей -->
 </head>
 <body>
-    <h1>Добро пожаловать!</h1>
-    <p>Это моё мини-приложение с JavaScript.</p>
-    <button id="actionButton">Нажми меня</button>
+    <h1>Бросок кубика</h1>
+    <div class="dice-container">
+        <div id="dice" class="dice">🎲</div>
+    </div>
+    <br>
+    <button class="roll-button" onclick="rollDice()">Бросить кубик</button>
 
-    <!-- Подключение JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Подключение JavaScript -->
 </body>
 </html>
