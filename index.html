@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бросок кубика</title>
-    <link rel="stylesheet" href="style.css"> <!-- Подключение стилей -->
+    <title>Mini Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <h1>Бросок кубика</h1>
-    <div class="dice-container">
-        <div id="dice" class="dice">🎲</div>
-    </div>
-    <br>
-    <button class="roll-button" onclick="rollDice()">Бросить кубик</button>
+    <div class="container">
+        <header>
+            <h1>CoinUp Games</h1>
+        </header>
 
-    <script src="script.js"></script> <!-- Подключение JavaScript -->
+        <main>
+            <section class="duel-options">
+                <h2>Дуэли</h2>
+                <div class="game-cards">
+                    <div class="game-card">
+                        <img src="dice.png" alt="Dice">
+                        <span>Dice</span>
+                    </div>
+                    <div class="game-card">
+                        <img src="basketball.png" alt="Basketball">
+                        <span>Баскетбол</span>
+                    </div>
+                </div>
+                <div class="settings">
+                    <p>Минимальная ставка: <span>0.1 с</span></p>
+                    <div class="inputs">
+                        <label>Сколько бросков выполнит каждый игрок?</label>
+                        <div class="input-buttons">
+                            <button>1</button><button>2</button><button>3</button><button>5</button>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <label>На сколько человек будет комната?</label>
+                        <div class="input-buttons">
+                            <button>2</button><button>3</button><button>4</button>
+                        </div>
+                    </div>
+                    <button class="create-duel">Создать дуэль</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <button>Главная</button>
+                <button class="active">Дуэли</button>
+                <button>Мини-игры</button>
+                <button>Настройки</button>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
