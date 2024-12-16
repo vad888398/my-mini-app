@@ -1,33 +1,41 @@
-/* Основные стили для вашего мини-приложения */
+/* Общие стили для всей страницы */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
 h1 {
-    color: #4CAF50;
-    margin-top: 50px;
+    color: #2E8B57;
+    margin-top: 20px;
 }
 
-p {
+/* Блок с кубиком */
+.dice-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dice {
+    font-size: 100px;
+    color: #333;
+}
+
+/* Кнопка броска кубика */
+.roll-button {
+    margin-top: 20px;
+    padding: 10px 20px;
     font-size: 18px;
-    margin: 10px auto;
-    max-width: 600px;
-}
-
-button {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+.roll-button:hover {
+    background-color: #218838;
 }
