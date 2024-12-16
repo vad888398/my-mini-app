@@ -1,10 +1,11 @@
-// Скрипт для демонстрации взаимодействия с пользователем
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.createElement("button");
-    button.textContent = "Нажми меня!";
-    document.body.appendChild(button);
+// Функция для "броска кубика"
+function rollDice() {
+    // Генерация случайного числа от 1 до 6
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
+    
+    // Массив эмодзи кубиков
+    const diceEmojis = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
 
-    button.addEventListener("click", function () {
-        alert("Привет! Это мини-приложение работает 🎉");
-    });
-});
+    // Отображение результата на странице
+    document.getElementById("dice").innerHTML = diceEmojis[randomNumber - 1];
+}
