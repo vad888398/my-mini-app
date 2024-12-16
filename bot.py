@@ -2,7 +2,7 @@ from telegram import Update, WebAppInfo, InlineKeyboardMarkup, InlineKeyboardBut
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Ваш токен от BotFather
-TOKEN = "ВАШ_ТОКЕН"
+TOKEN = "7553273396:AAGwEvb4IbZKDhZ9lLyIc5CjRK4mYQftB2c"
 
 # Обработчик команды /start
 def start(update: Update, context: CallbackContext) -> None:
